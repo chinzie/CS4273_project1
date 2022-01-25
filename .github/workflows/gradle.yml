@@ -31,4 +31,4 @@ jobs:
         arguments: build
     - name: Test with gradlew
       run: |
-        gradlew testLetter[1].java
+         testLetter[1].java
