@@ -11,7 +11,7 @@ public class lettergameTest {
 	@Test
 	public void lettertest1() 
 	{
-		check.getLetters();
+		check.main(null);
 		String actual = check.englishLetters.get(14);
 		String expected = "O";
 		
