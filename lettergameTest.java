@@ -1,21 +1,18 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import java.awt.Checkbox;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
-
-class testLetter {
+public class lettergameTest {
 
 	lettergame check = new lettergame();
 	
 	// English letter unit test
 	
 	@Test
-	void lettertest1() 
+	public void lettertest1() 
 	{
 		check.getLetters();
-		String actual = check.englishLetters.get(15);
+		String actual = check.englishLetters.get(14);
 		String expected = "O";
 		
 		assertEquals(expected, actual);
@@ -23,7 +20,7 @@ class testLetter {
 	}
 	
 	@Test
-	void letterstest2()
+	public void letterstest2()
 	{
 		int actual = check.englishLetters.size();
 		int expected = 26;
@@ -32,7 +29,7 @@ class testLetter {
 	}
 
 	@Test
-	void lettertest3() 
+	public void lettertest3() 
 	{
 		String actual = check.englishLetters.get(4);
 		String expected = "E";
@@ -42,7 +39,7 @@ class testLetter {
 	}
 	
 	@Test
-	void lettertest4()
+	public void lettertest4()
 	{
 		String actual = check.englishLetters.get(0);
 		String expected = "A";
@@ -53,7 +50,7 @@ class testLetter {
 	// Spanish letter unit test
 	
 	@Test
-	void lettertest5() 
+	public void lettertest5() 
 	{
 		String actual = check.spanishLetters.get(13);
 		String expected = "Ll";
@@ -63,7 +60,7 @@ class testLetter {
 	}
 	
 	@Test
-	void letterstest6()
+	public void letterstest6()
 	{
 		int actual = check.spanishLetters.size();
 		int expected = 30;
@@ -72,7 +69,7 @@ class testLetter {
 	}
 
 	@Test
-	void lettertest7() 
+	public void lettertest7() 
 	{
 		String actual = check.spanishLetters.get(3);
 		String expected = "Ch";
@@ -82,9 +79,9 @@ class testLetter {
 	}
 	
 	@Test
-	void lettertest8()
+	public void lettertest8()
 	{
-		String actual = check.spanishLetters.get(28);
+		String actual = check.spanishLetters.get(29);
 		String expected = "Z";
 		
 		assertEquals(expected, actual);
