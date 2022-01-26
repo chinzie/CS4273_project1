@@ -32,4 +32,4 @@ jobs:
     - name: Test with gradlew
       run: |
         javac lettergameTest.java
-        test lettergameTest.java
+        java -cp .:/usr/share/java/junit.jar org.junit.runner.JUnitCore lettergameTest
