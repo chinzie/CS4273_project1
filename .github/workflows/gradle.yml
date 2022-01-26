@@ -30,4 +30,7 @@ jobs:
       with:
         arguments: build
     - name: Test with gradlew
-      run: java lettergameTest.java
+      run: javac lettergame.java
+      run: java lettergame
+      run: javac lettergameTest.java
+      run: java lettergameTest
